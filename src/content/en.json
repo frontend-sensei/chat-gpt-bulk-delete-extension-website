@@ -12,17 +12,17 @@
     "language": "Language"
   },
   "hero": {
-    "title": "Clear the clutter. Keep what matters.",
-    "subtitle": "Select multiple ChatGPT conversations and remove them in one go.",
+    "title": "Delete ChatGPT conversations in bulk.",
+    "subtitle": "Select, review, and delete multiple ChatGPT conversations in one go.",
     "cta": "Add to Chrome",
     "donate": "Donate via PayPal",
-    "note": "Free · Confirmation before deletion · Zero tracking",
+    "note": "Free forever.",
     "artworkCaption": "Selected. Confirmed. Gone."
   },
   "highlights": [
-    "Bulk select",
-    "Confirm first",
-    "No trackers"
+    "Free forever",
+    "Delete in seconds",
+    "Privacy first"
   ],
   "authorPrefix": "Built by"
 }

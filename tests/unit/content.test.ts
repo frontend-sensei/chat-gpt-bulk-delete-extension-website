@@ -15,15 +15,15 @@ const validLocale = {
     language: "Language",
   },
   hero: {
-    title: "Clear the clutter. Keep what matters.",
+    title: "Delete ChatGPT conversations in bulk.",
     subtitle:
-      "Select multiple ChatGPT conversations and remove them in one go.",
+      "Select, review, and delete multiple ChatGPT conversations in one go.",
     cta: "Add to Chrome",
     donate: "Donate via PayPal",
-    note: "Free · Confirmation before deletion · Zero tracking",
+    note: "Free forever.",
     artworkCaption: "Selected. Confirmed. Gone.",
   },
-  highlights: ["Bulk select", "Confirm first", "No trackers"],
+  highlights: ["Free forever", "Delete in seconds", "Privacy first"],
   authorPrefix: "Built by",
 };
 

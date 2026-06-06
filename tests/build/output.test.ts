@@ -6,6 +6,26 @@ import { describe, expect, it } from "vitest";
 const dist = join(process.cwd(), "dist");
 const storeUrl =
   "https://chromewebstore.google.com/detail/chatgpt-bulk-delete/gibkdljbjknbolnjmhnahcpjecgjifde";
+const expectedCopy = {
+  en: {
+    title: "Delete ChatGPT conversations in bulk.",
+    subtitle:
+      "Select, review, and delete multiple ChatGPT conversations in one go.",
+    note: "Free forever.",
+    highlights: ["Free forever", "Delete in seconds", "Privacy first"],
+  },
+  de: {
+    title: "Mehrere ChatGPT-Unterhaltungen auf einmal löschen.",
+    subtitle:
+      "Wähle mehrere ChatGPT-Unterhaltungen aus, prüfe deine Auswahl und lösche sie in einem Schritt.",
+    note: "Für immer kostenlos.",
+    highlights: [
+      "Für immer kostenlos",
+      "In Sekunden löschen",
+      "Datenschutz zuerst",
+    ],
+  },
+} as const;
 
 async function readOutput(path: string) {
   return readFile(join(dist, path), "utf8");
@@ -19,6 +39,7 @@ describe("generated locale pages", () => {
   ])("renders %s with complete SEO metadata", async (file, lang, canonical) => {
     const html = await readOutput(file);
     const $ = load(html);
+    const copy = expectedCopy[lang as keyof typeof expectedCopy];
     const alternates = $('link[rel="alternate"]')
       .map((_, element) => $(element).attr("hreflang"))
       .get();
@@ -48,7 +69,14 @@ describe("generated locale pages", () => {
     expect($('[data-action="donate"]').text()).toContain(
       lang === "de" ? "Über PayPal spenden" : "Donate via PayPal",
     );
-    expect($(".feature-strip li")).toHaveLength(3);
+    expect($(".hero-copy h1").text().trim()).toBe(copy.title);
+    expect($(".hero-subtitle").text().trim()).toBe(copy.subtitle);
+    expect($(".hero-note").text().trim()).toBe(copy.note);
+    expect(
+      $(".feature-strip li")
+        .map((_, element) => $(element).text().trim())
+        .get(),
+    ).toEqual(copy.highlights);
     expect($(".author-row").text()).toContain("Yaroslav Gulnazarian");
     expect(html).not.toContain("Your conversations");
     expect(html).not.toContain('id="features"');

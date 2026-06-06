@@ -12,17 +12,17 @@
     "language": "Sprache"
   },
   "hero": {
-    "title": "Weniger Chaos. Mehr von dem, was zählt.",
-    "subtitle": "Wähle mehrere ChatGPT-Unterhaltungen aus und entferne sie in einem Schritt.",
+    "title": "Mehrere ChatGPT-Unterhaltungen auf einmal löschen.",
+    "subtitle": "Wähle mehrere ChatGPT-Unterhaltungen aus, prüfe deine Auswahl und lösche sie in einem Schritt.",
     "cta": "Zu Chrome hinzufügen",
     "donate": "Über PayPal spenden",
-    "note": "Kostenlos · Bestätigung vor dem Löschen · Kein Tracking",
+    "note": "Für immer kostenlos.",
     "artworkCaption": "Ausgewählt. Bestätigt. Gelöscht."
   },
   "highlights": [
-    "Mehrfachauswahl",
-    "Erst bestätigen",
-    "Keine Tracker"
+    "Für immer kostenlos",
+    "In Sekunden löschen",
+    "Datenschutz zuerst"
   ],
   "authorPrefix": "Entwickelt von"
 }
