@@ -12,18 +12,14 @@ const expectedCopy = {
     subtitle:
       "Select, review, and delete multiple ChatGPT conversations in one go.",
     note: "Free forever.",
-    highlights: ["Free forever", "Delete in seconds", "Privacy first"],
+    highlights: ["Bulk select", "Review first", "Privacy first"],
   },
   de: {
     title: "Mehrere ChatGPT-Unterhaltungen auf einmal löschen.",
     subtitle:
       "Wähle mehrere ChatGPT-Unterhaltungen aus, prüfe deine Auswahl und lösche sie in einem Schritt.",
     note: "Für immer kostenlos.",
-    highlights: [
-      "Für immer kostenlos",
-      "In Sekunden löschen",
-      "Datenschutz zuerst",
-    ],
+    highlights: ["Mehrfachauswahl", "Erst prüfen", "Datenschutz zuerst"],
   },
 } as const;
 
