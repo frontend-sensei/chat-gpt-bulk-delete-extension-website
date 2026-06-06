@@ -43,7 +43,6 @@ export const localeContentSchema = z.object({
     subtitle: nonEmptyString,
     cta: nonEmptyString,
     donate: nonEmptyString,
-    note: nonEmptyString,
     artworkCaption: nonEmptyString
   }),
   highlights: z.array(nonEmptyString).length(3),

@@ -11,14 +11,12 @@ const expectedCopy = {
     title: "Delete ChatGPT conversations in bulk.",
     subtitle:
       "Select, review, and delete multiple ChatGPT conversations in one go.",
-    note: "Free forever.",
     highlights: ["Free forever", "Delete in seconds", "Privacy first"],
   },
   de: {
     title: "Mehrere ChatGPT-Unterhaltungen auf einmal löschen.",
     subtitle:
       "Wähle mehrere ChatGPT-Unterhaltungen aus, prüfe deine Auswahl und lösche sie in einem Schritt.",
-    note: "Für immer kostenlos.",
     highlights: [
       "Für immer kostenlos",
       "In Sekunden löschen",
@@ -71,7 +69,7 @@ describe("generated locale pages", () => {
     );
     expect($(".hero-copy h1").text().trim()).toBe(copy.title);
     expect($(".hero-subtitle").text().trim()).toBe(copy.subtitle);
-    expect($(".hero-note").text().trim()).toBe(copy.note);
+    expect($(".hero-note")).toHaveLength(0);
     expect(
       $(".feature-strip li")
         .map((_, element) => $(element).text().trim())

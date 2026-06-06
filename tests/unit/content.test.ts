@@ -20,7 +20,6 @@ const validLocale = {
       "Select, review, and delete multiple ChatGPT conversations in one go.",
     cta: "Add to Chrome",
     donate: "Donate via PayPal",
-    note: "Free forever.",
     artworkCaption: "Selected. Confirmed. Gone.",
   },
   highlights: ["Free forever", "Delete in seconds", "Privacy first"],

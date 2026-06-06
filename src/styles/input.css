@@ -310,12 +310,6 @@ a.donate-button:hover {
   cursor: not-allowed;
 }
 
-.hero-note {
-  margin: 1.35rem 0 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
 .copy-footer {
   display: grid;
   gap: 1.25rem;
