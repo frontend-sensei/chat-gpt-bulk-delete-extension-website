@@ -15,7 +15,7 @@ describe("generated locale pages", () => {
   it.each([
     ["index.html", "en", "https://example.test/en/"],
     ["en/index.html", "en", "https://example.test/en/"],
-    ["de/index.html", "de", "https://example.test/de/"]
+    ["de/index.html", "de", "https://example.test/de/"],
   ])("renders %s with complete SEO metadata", async (file, lang, canonical) => {
     const html = await readOutput(file);
     const $ = load(html);
@@ -25,46 +25,46 @@ describe("generated locale pages", () => {
 
     expect($("html").attr("lang")).toBe(lang);
     expect($('link[rel="canonical"]').attr("href")).toBe(canonical);
-    expect(alternates).toEqual(expect.arrayContaining(["en", "de", "x-default"]));
-    expect($(`a[href="${storeUrl}"]`)).toHaveLength(1);
-    expect($('link[rel="stylesheet"]').attr("href")).toBe(
-      "/assets/styles.css"
+    expect(alternates).toEqual(
+      expect.arrayContaining(["en", "de", "x-default"]),
     );
+    expect($(`a[href="${storeUrl}"]`)).toHaveLength(1);
+    expect($('link[rel="stylesheet"]').attr("href")).toBe("/assets/styles.css");
     expect($('script[type="application/ld+json"]')).toHaveLength(1);
     expect($('meta[property="og:title"]')).toHaveLength(1);
     expect($('meta[name="twitter:card"]').attr("content")).toBe(
-      "summary_large_image"
+      "summary_large_image",
     );
     expect($('meta[name="color-scheme"]').attr("content")).toBe("light dark");
     expect($("main.hero-shell")).toHaveLength(1);
     expect($("main > section")).toHaveLength(2);
     expect($('picture.hero-art img[src="/assets/hero-art.webp"]')).toHaveLength(
-      1
+      1,
     );
     expect($('img[src="/assets/logo.svg"]')).toHaveLength(1);
     expect($('[data-action="install"]').text()).toContain(
-      lang === "de" ? "Zu Chrome hinzufügen" : "Add to Chrome"
+      lang === "de" ? "Zu Chrome hinzufügen" : "Add to Chrome",
     );
     expect($('[data-action="donate"]').text()).toContain(
-      lang === "de" ? "Über PayPal spenden" : "Donate via PayPal"
+      lang === "de" ? "Über PayPal spenden" : "Donate via PayPal",
     );
     expect($(".feature-strip li")).toHaveLength(3);
-    expect($(".author-row").text()).toContain("Yaroslav Hiulnazarian");
+    expect($(".author-row").text()).toContain("Yaroslav Gulnazarian");
     expect(html).not.toContain("Your conversations");
     expect(html).not.toContain('id="features"');
   });
 
   it("copies generated assets", async () => {
     await expect(readOutput("assets/styles.css")).resolves.toContain(
-      "font-family"
+      "font-family",
     );
     await expect(readFile(join(dist, "assets/icon.png"))).resolves.toBeTruthy();
     await expect(readFile(join(dist, "assets/logo.svg"))).resolves.toBeTruthy();
     await expect(
-      readFile(join(dist, "assets/hero-art.webp"))
+      readFile(join(dist, "assets/hero-art.webp")),
     ).resolves.toBeTruthy();
     await expect(
-      readFile(join(dist, "assets/og-image.png"))
+      readFile(join(dist, "assets/og-image.png")),
     ).resolves.toBeTruthy();
   });
 });
@@ -80,7 +80,7 @@ describe("generated crawler files", () => {
 
   it("points robots.txt to the sitemap", async () => {
     await expect(readOutput("robots.txt")).resolves.toContain(
-      "Sitemap: https://example.test/sitemap.xml"
+      "Sitemap: https://example.test/sitemap.xml",
     );
   });
 });

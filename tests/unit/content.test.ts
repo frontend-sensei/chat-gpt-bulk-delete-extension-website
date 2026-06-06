@@ -8,22 +8,23 @@ const validLocale = {
   dir: "ltr",
   seo: {
     title: "ChatGPT Bulk Delete",
-    description: "Delete multiple ChatGPT conversations at once."
+    description: "Delete multiple ChatGPT conversations at once.",
   },
   nav: {
     install: "Add to Chrome",
-    language: "Language"
+    language: "Language",
   },
   hero: {
     title: "Clear the clutter. Keep what matters.",
-    subtitle: "Select multiple ChatGPT conversations and remove them in one go.",
+    subtitle:
+      "Select multiple ChatGPT conversations and remove them in one go.",
     cta: "Add to Chrome",
     donate: "Donate via PayPal",
     note: "Free · Confirmation before deletion · Zero tracking",
-    artworkCaption: "Selected. Confirmed. Gone."
+    artworkCaption: "Selected. Confirmed. Gone.",
   },
   highlights: ["Bulk select", "Confirm first", "No trackers"],
-  authorPrefix: "Built by"
+  authorPrefix: "Built by",
 };
 
 describe("parseLocales", () => {
@@ -33,7 +34,9 @@ describe("parseLocales", () => {
 
   it("rejects missing localized content", () => {
     expect(() =>
-      parseLocales([{ ...validLocale, hero: { ...validLocale.hero, title: "" } }])
+      parseLocales([
+        { ...validLocale, hero: { ...validLocale.hero, title: "" } },
+      ]),
     ).toThrow(/hero\.title/i);
   });
 
@@ -41,8 +44,8 @@ describe("parseLocales", () => {
     expect(() =>
       parseLocales([
         validLocale,
-        { ...validLocale, locale: "de", languageName: "Deutsch" }
-      ])
+        { ...validLocale, locale: "de", languageName: "Deutsch" },
+      ]),
     ).toThrow(/duplicate locale path/i);
   });
 });
@@ -57,10 +60,10 @@ describe("parseSiteConfig", () => {
         "https://chromewebstore.google.com/detail/chatgpt-bulk-delete/gibkdljbjknbolnjmhnahcpjecgjifde",
       localSiteUrl: "http://localhost:8080",
       author: {
-        name: "Yaroslav Hiulnazarian",
+        name: "Yaroslav Gulnazarian",
         donateUrl: null,
-        socialLinks: []
-      }
+        socialLinks: [],
+      },
     });
 
     expect(result.extensionId).toBe("gibkdljbjknbolnjmhnahcpjecgjifde");
