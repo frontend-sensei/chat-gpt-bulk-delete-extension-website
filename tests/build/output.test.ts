@@ -104,6 +104,11 @@ describe("generated locale pages", () => {
       ).toHaveLength(1);
       expect($('img[src="/assets/logo.svg"]')).toHaveLength(1);
       expect($('[data-action="install"]').text()).toContain(locale.hero.cta);
+      expect(
+        $('[data-action="install"] svg[data-icon="chrome"] path')
+          .map((_, element) => $(element).attr("fill"))
+          .get(),
+      ).toEqual(["#EA4335", "#FBBC04", "#34A853", "#4285F4"]);
       expect($('[data-action="donate"]').text()).toContain(locale.hero.donate);
       expect($(".hero-copy h1").text().trim()).toBe(locale.hero.title);
       expect($(".hero-subtitle").text().trim()).toBe(locale.hero.subtitle);
