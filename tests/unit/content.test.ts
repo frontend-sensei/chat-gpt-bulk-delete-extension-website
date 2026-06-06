@@ -11,41 +11,19 @@ const validLocale = {
     description: "Delete multiple ChatGPT conversations at once."
   },
   nav: {
-    features: "Features",
-    privacy: "Privacy",
     install: "Add to Chrome",
     language: "Language"
   },
   hero: {
-    title: "Clean up ChatGPT in a few clicks",
-    subtitle: "Select conversations and delete them together.",
+    title: "Clear the clutter. Keep what matters.",
+    subtitle: "Select multiple ChatGPT conversations and remove them in one go.",
     cta: "Add to Chrome",
-    note: "Free Chrome extension"
+    donate: "Donate via PayPal",
+    note: "Free · Confirmation before deletion · Zero tracking",
+    artworkCaption: "Selected. Confirmed. Gone."
   },
-  demo: {
-    title: "Your conversations",
-    selected: "3 selected",
-    selectAll: "Select all",
-    deleteSelected: "Delete selected",
-    conversations: ["Trip ideas", "Weekly planning", "Draft notes"]
-  },
-  featuresHeading: "A faster way to tidy your history",
-  features: [
-    {
-      title: "Multi-select",
-      text: "Choose the conversations you want to remove.",
-      icon: "checks"
-    }
-  ],
-  privacy: {
-    title: "Your data stays private",
-    text: "The extension does not collect or use your data.",
-    linkLabel: "View privacy details"
-  },
-  footer: {
-    tagline: "Take control of your ChatGPT history.",
-    disclaimer: "Not affiliated with OpenAI."
-  }
+  highlights: ["Bulk select", "Confirm first", "No trackers"],
+  authorPrefix: "Built by"
 };
 
 describe("parseLocales", () => {
@@ -77,9 +55,15 @@ describe("parseSiteConfig", () => {
       extensionId: "gibkdljbjknbolnjmhnahcpjecgjifde",
       storeUrl:
         "https://chromewebstore.google.com/detail/chatgpt-bulk-delete/gibkdljbjknbolnjmhnahcpjecgjifde",
-      localSiteUrl: "http://localhost:8080"
+      localSiteUrl: "http://localhost:8080",
+      author: {
+        name: "Yaroslav Hiulnazarian",
+        donateUrl: null,
+        socialLinks: []
+      }
     });
 
     expect(result.extensionId).toBe("gibkdljbjknbolnjmhnahcpjecgjifde");
+    expect(result.author.donateUrl).toBeNull();
   });
 });

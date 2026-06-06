@@ -4,63 +4,25 @@
   "path": "/de/",
   "dir": "ltr",
   "seo": {
-    "title": "ChatGPT Bulk Delete — Unterhaltungen schneller aufräumen",
-    "description": "Wähle mehrere ChatGPT-Unterhaltungen aus, markiere bei Bedarf alle und lösche sie gemeinsam mit einer schlanken Chrome-Erweiterung."
+    "title": "ChatGPT Bulk Delete — Schluss mit dem Chaos",
+    "description": "Wähle mehrere ChatGPT-Unterhaltungen aus und entferne sie gemeinsam. Kostenlos, mit Bestätigung und ohne Tracking."
   },
   "nav": {
-    "features": "Funktionen",
-    "privacy": "Datenschutz",
     "install": "Zu Chrome hinzufügen",
     "language": "Sprache"
   },
   "hero": {
-    "title": "Ein aufgeräumter ChatGPT-Verlauf mit wenigen Klicks.",
-    "subtitle": "Wähle nicht mehr benötigte Unterhaltungen aus, prüfe deine Auswahl und lösche sie gemeinsam statt einzeln.",
+    "title": "Weniger Chaos. Mehr von dem, was zählt.",
+    "subtitle": "Wähle mehrere ChatGPT-Unterhaltungen aus und entferne sie in einem Schritt.",
     "cta": "Zu Chrome hinzufügen",
-    "note": "Schlanke Erweiterung · Keine Datenerfassung"
+    "donate": "Über PayPal spenden",
+    "note": "Kostenlos · Bestätigung vor dem Löschen · Kein Tracking",
+    "artworkCaption": "Ausgewählt. Bestätigt. Gelöscht."
   },
-  "demo": {
-    "title": "Deine Unterhaltungen",
-    "selected": "3 ausgewählt",
-    "selectAll": "Alle auswählen",
-    "deleteSelected": "Auswahl löschen",
-    "conversations": [
-      "Ideen für den Wochenendtrip",
-      "Notizen zur Wochenplanung",
-      "Alter Projektentwurf",
-      "Recherche für das Abendessen"
-    ]
-  },
-  "featuresHeading": "Weniger klicken. Mehr Kontrolle.",
-  "features": [
-    {
-      "title": "Mehrere Chats auswählen",
-      "text": "Bestimme genau, welche Unterhaltungen du aus deinem Verlauf entfernen möchtest.",
-      "icon": "checks"
-    },
-    {
-      "title": "Alles auswählen",
-      "text": "Nutze „Alle auswählen“, wenn du eine längere Liste in einem Schritt leeren möchtest.",
-      "icon": "select-all"
-    },
-    {
-      "title": "Vor dem Löschen bestätigen",
-      "text": "Prüfe deine Auswahl, bevor die Erweiterung den Löschvorgang startet.",
-      "icon": "confirm"
-    },
-    {
-      "title": "Direkt in ChatGPT",
-      "text": "Eine fokussierte, schlanke Oberfläche, die direkt mit deiner Unterhaltungsliste arbeitet.",
-      "icon": "lightweight"
-    }
+  "highlights": [
+    "Mehrfachauswahl",
+    "Erst bestätigen",
+    "Keine Tracker"
   ],
-  "privacy": {
-    "title": "Deine Unterhaltungen bleiben deine.",
-    "text": "Laut Datenschutzerklärung im Chrome Web Store erhebt oder verwendet ChatGPT Bulk Delete keine deiner Daten.",
-    "linkLabel": "Eintrag im Chrome Web Store ansehen"
-  },
-  "footer": {
-    "tagline": "Behalte die Kontrolle über deinen ChatGPT-Unterhaltungsverlauf.",
-    "disclaimer": "ChatGPT Bulk Delete ist eine unabhängige Erweiterung und steht in keiner Verbindung zu OpenAI."
-  }
+  "authorPrefix": "Entwickelt von"
 }

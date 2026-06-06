@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#d9f4f7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#050a0c" media="(prefers-color-scheme: dark)">
     <title>{{ locale.seo.title }}</title>
     <meta name="description" content="{{ locale.seo.description }}">
-    <meta name="theme-color" content="#fbfaff">
     <link rel="canonical" href="{{ siteUrl | absoluteUrl(locale.path) }}">
     {% for alternate in alternateLinks %}
       <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url }}">
@@ -26,15 +28,9 @@
     <script type="application/ld+json">{{ locale | structuredData | json | safe }}</script>
   </head>
   <body>
-    <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-xl focus:bg-white focus:px-4 focus:py-3 focus:shadow-xl" href="#main">
-      {{ locale.nav.features }}
-    </a>
-    {% include "partials/header.njk" %}
-    <main id="main">
+    <a class="skip-link" href="#main">{{ locale.hero.title }}</a>
+    <main id="main" class="hero-shell">
       {% include "partials/hero.njk" %}
-      {% include "partials/features.njk" %}
-      {% include "partials/privacy.njk" %}
     </main>
-    {% include "partials/footer.njk" %}
   </body>
 </html>

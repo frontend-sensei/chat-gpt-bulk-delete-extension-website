@@ -26,7 +26,7 @@ describe("generated locale pages", () => {
     expect($("html").attr("lang")).toBe(lang);
     expect($('link[rel="canonical"]').attr("href")).toBe(canonical);
     expect(alternates).toEqual(expect.arrayContaining(["en", "de", "x-default"]));
-    expect($(`a[href="${storeUrl}"]`)).toHaveLength(3);
+    expect($(`a[href="${storeUrl}"]`)).toHaveLength(1);
     expect($('link[rel="stylesheet"]').attr("href")).toBe(
       "/assets/styles.css"
     );
@@ -35,6 +35,23 @@ describe("generated locale pages", () => {
     expect($('meta[name="twitter:card"]').attr("content")).toBe(
       "summary_large_image"
     );
+    expect($('meta[name="color-scheme"]').attr("content")).toBe("light dark");
+    expect($("main.hero-shell")).toHaveLength(1);
+    expect($("main > section")).toHaveLength(2);
+    expect($('picture.hero-art img[src="/assets/hero-art.webp"]')).toHaveLength(
+      1
+    );
+    expect($('img[src="/assets/logo.svg"]')).toHaveLength(1);
+    expect($('[data-action="install"]').text()).toContain(
+      lang === "de" ? "Zu Chrome hinzufügen" : "Add to Chrome"
+    );
+    expect($('[data-action="donate"]').text()).toContain(
+      lang === "de" ? "Über PayPal spenden" : "Donate via PayPal"
+    );
+    expect($(".feature-strip li")).toHaveLength(3);
+    expect($(".author-row").text()).toContain("Yaroslav Hiulnazarian");
+    expect(html).not.toContain("Your conversations");
+    expect(html).not.toContain('id="features"');
   });
 
   it("copies generated assets", async () => {
@@ -42,6 +59,10 @@ describe("generated locale pages", () => {
       "font-family"
     );
     await expect(readFile(join(dist, "assets/icon.png"))).resolves.toBeTruthy();
+    await expect(readFile(join(dist, "assets/logo.svg"))).resolves.toBeTruthy();
+    await expect(
+      readFile(join(dist, "assets/hero-art.webp"))
+    ).resolves.toBeTruthy();
     await expect(
       readFile(join(dist, "assets/og-image.png"))
     ).resolves.toBeTruthy();

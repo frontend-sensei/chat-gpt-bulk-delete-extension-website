@@ -4,63 +4,25 @@
   "path": "/en/",
   "dir": "ltr",
   "seo": {
-    "title": "ChatGPT Bulk Delete — Clean Up Conversations Faster",
-    "description": "Select multiple ChatGPT conversations, choose them all at once, and delete them together with a lightweight Chrome extension."
+    "title": "ChatGPT Bulk Delete — Clear the Clutter",
+    "description": "Select multiple ChatGPT conversations and remove them in one go. Free, confirmation-first, and built with zero tracking."
   },
   "nav": {
-    "features": "Features",
-    "privacy": "Privacy",
     "install": "Add to Chrome",
     "language": "Language"
   },
   "hero": {
-    "title": "A cleaner ChatGPT history in a few clicks.",
-    "subtitle": "Select the conversations you no longer need, review your choice, and delete them together instead of one by one.",
+    "title": "Clear the clutter. Keep what matters.",
+    "subtitle": "Select multiple ChatGPT conversations and remove them in one go.",
     "cta": "Add to Chrome",
-    "note": "Lightweight extension · No data collection"
+    "donate": "Donate via PayPal",
+    "note": "Free · Confirmation before deletion · Zero tracking",
+    "artworkCaption": "Selected. Confirmed. Gone."
   },
-  "demo": {
-    "title": "Your conversations",
-    "selected": "3 selected",
-    "selectAll": "Select all",
-    "deleteSelected": "Delete selected",
-    "conversations": [
-      "Weekend trip ideas",
-      "Weekly planning notes",
-      "Old project draft",
-      "Dinner recipe research"
-    ]
-  },
-  "featuresHeading": "Less clicking. More control.",
-  "features": [
-    {
-      "title": "Select multiple chats",
-      "text": "Choose exactly which conversations you want to remove from your history.",
-      "icon": "checks"
-    },
-    {
-      "title": "Select everything",
-      "text": "Use Select All when you want to clear a longer list in one action.",
-      "icon": "select-all"
-    },
-    {
-      "title": "Confirm before deleting",
-      "text": "Review your selection before the extension starts the deletion process.",
-      "icon": "confirm"
-    },
-    {
-      "title": "Fits into ChatGPT",
-      "text": "A focused, lightweight interface that works directly with your conversation list.",
-      "icon": "lightweight"
-    }
+  "highlights": [
+    "Bulk select",
+    "Confirm first",
+    "No trackers"
   ],
-  "privacy": {
-    "title": "Your conversations stay yours.",
-    "text": "According to its Chrome Web Store privacy disclosure, ChatGPT Bulk Delete does not collect or use your data.",
-    "linkLabel": "View the Chrome Web Store listing"
-  },
-  "footer": {
-    "tagline": "Take control of your ChatGPT conversation history.",
-    "disclaimer": "ChatGPT Bulk Delete is an independent extension and is not affiliated with OpenAI."
-  }
+  "authorPrefix": "Built by"
 }

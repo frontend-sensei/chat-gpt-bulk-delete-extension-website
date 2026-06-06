@@ -1,10 +1,11 @@
 # ChatGPT Bulk Delete Website
 
-Static multilingual landing page for the
+Single-screen multilingual landing page for the
 [ChatGPT Bulk Delete Chrome extension](https://chromewebstore.google.com/detail/chatgpt-bulk-delete/gibkdljbjknbolnjmhnahcpjecgjifde).
 
 The site uses Eleventy, Nunjucks, TypeScript, Tailwind CSS, and JSON locale
-files. It produces plain HTML with no client-side JavaScript.
+files. It produces plain HTML with no client-side JavaScript and follows the
+operating system's light or dark color preference.
 
 ## Requirements
 
@@ -71,12 +72,19 @@ be unique.
 Global product data and the Chrome Web Store URL live in
 `src/content/site.json`.
 
+The same file contains the author profile, PayPal donation URL, and social
+links. The donation control stays non-interactive until `donateUrl` contains a
+real URL. Social icons render only for configured links.
+
 ## Assets
 
-`src/assets/icon-source.jpg` is the extension icon retrieved from its public
-Chrome Web Store listing. `scripts/build-assets.ts` optimizes it and generates:
+`src/assets/logo.svg` is the extension mark. The approved dark-theme concept is
+cropped into `src/assets/hero-art-source.png`, preserving the production
+illustration from the concept. `scripts/build-assets.ts` generates:
 
 - `dist/assets/icon.png`
+- `dist/assets/logo.svg`
+- `dist/assets/hero-art.webp`
 - `dist/assets/og-image.png` (1200×630)
 
 Generated assets and build output are not committed.

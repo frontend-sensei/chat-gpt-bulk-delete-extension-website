@@ -1,57 +1,98 @@
-<section class="page-shell grid items-center gap-14 pt-14 pb-24 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:pt-20 lg:pb-32">
-  <div class="max-w-2xl">
-    <h1 class="text-5xl leading-[0.98] font-bold tracking-[-0.055em] text-balance sm:text-6xl lg:text-7xl">
-      {{ locale.hero.title }}
-    </h1>
-    <p class="mt-7 max-w-xl text-lg leading-8 text-muted sm:text-xl">
-      {{ locale.hero.subtitle }}
-    </p>
-    <div class="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-      <a class="primary-button min-w-44" href="{{ site.storeUrl }}" target="_blank" rel="noopener noreferrer">
-        <svg class="size-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<section class="copy-panel">
+  <header class="site-header">
+    <a class="brand" href="{{ locale.path }}" aria-label="{{ site.name }}">
+      <img class="brand-mark" src="/assets/logo.svg" width="48" height="48" alt="">
+      <span>{{ site.name }}</span>
+    </a>
+
+    <details class="language-switcher">
+      <summary>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M3.5 12h17M12 3c2.3 2.4 3.5 5.4 3.5 9S14.3 18.6 12 21c-2.3-2.4-3.5-5.4-3.5-9S9.7 5.4 12 3Z" stroke="currentColor" stroke-width="1.7"/>
         </svg>
-        {{ locale.hero.cta }}
+        <span>{{ locale.locale | upper }}</span>
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="m4 6 4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </summary>
+      <nav aria-label="{{ locale.nav.language }}">
+        {% for language in locales %}
+          <a href="{{ language.path }}" lang="{{ language.locale }}" hreflang="{{ language.locale }}"{% if language.locale == locale.locale %} aria-current="page"{% endif %}>
+            {{ language.languageName }}
+          </a>
+        {% endfor %}
+      </nav>
+    </details>
+  </header>
+
+  <div class="hero-copy">
+    <h1>{{ locale.hero.title }}</h1>
+    <p class="hero-subtitle">{{ locale.hero.subtitle }}</p>
+
+    <div class="actions">
+      <a class="install-button" data-action="install" href="{{ site.storeUrl }}" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3a9 9 0 1 0 8.6 11.5H12a2.5 2.5 0 1 1 2.2-3.7l4.5-7.8H12Z" fill="currentColor"/>
+          <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+        </svg>
+        <span>{{ locale.hero.cta }}</span>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 12h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </a>
-      <p class="text-sm font-medium text-muted">{{ locale.hero.note }}</p>
+
+      {% if site.author.donateUrl %}
+        <a class="donate-button" data-action="donate" href="{{ site.author.donateUrl }}" target="_blank" rel="noopener noreferrer">
+      {% else %}
+        <span class="donate-button is-pending" data-action="donate" aria-disabled="true" title="PayPal link pending">
+      {% endif %}
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M20.8 5.8c0 6-8.8 11.7-8.8 11.7S3.2 11.8 3.2 5.8A4.3 4.3 0 0 1 12 4.6a4.3 4.3 0 0 1 8.8 1.2Z" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+          <span>{{ locale.hero.donate }}</span>
+      {% if site.author.donateUrl %}
+        </a>
+      {% else %}
+        </span>
+      {% endif %}
     </div>
+
+    <p class="hero-note">{{ locale.hero.note }}</p>
   </div>
 
-  <div class="relative mx-auto w-full max-w-2xl">
-    <div class="absolute -top-8 -right-6 h-36 w-36 rounded-full bg-mint/30 blur-3xl" aria-hidden="true"></div>
-    <div class="absolute -bottom-8 -left-8 h-44 w-44 rounded-full bg-violet/25 blur-3xl" aria-hidden="true"></div>
-    <div class="glass-panel relative overflow-hidden rounded-[2rem] p-3 sm:p-5">
-      <div class="rounded-[1.4rem] border border-slate-200/80 bg-[#f8f9fb] p-4 sm:p-6">
-        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
-          <div>
-            <p class="text-sm font-bold text-ink">{{ locale.demo.title }}</p>
-            <p class="mt-1 text-xs font-semibold text-violet">{{ locale.demo.selected }}</p>
-          </div>
-          <button class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-muted shadow-sm" type="button" disabled>
-            {{ locale.demo.selectAll }}
-          </button>
-        </div>
-        <div class="divide-y divide-slate-200/80">
-          {% for conversation in locale.demo.conversations %}
-            <div class="flex items-center gap-3 py-3.5{% if loop.last %} opacity-60{% endif %}">
-              <span class="flex size-5 shrink-0 items-center justify-center rounded-md border-2{% if not loop.last %} border-violet bg-violet text-white{% else %} border-slate-300 bg-white{% endif %}">
-                {% if not loop.last %}
-                  <svg class="size-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-                    <path d="m2.5 6 2.1 2.1L9.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                {% endif %}
-              </span>
-              <span class="min-w-0 flex-1 truncate text-sm font-semibold text-slate-700">{{ conversation }}</span>
-              <span class="size-2 shrink-0 rounded-full bg-slate-300" aria-hidden="true"></span>
-            </div>
+  <div class="copy-footer">
+    <ul class="feature-strip">
+      {% for highlight in locale.highlights %}
+        <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+
+    <div class="author-row">
+      <p>{{ locale.authorPrefix }} <strong>{{ site.author.name }}</strong></p>
+      {% if site.author.socialLinks.length %}
+        <nav aria-label="Yaroslav Hiulnazarian social links">
+          {% for social in site.author.socialLinks %}
+            <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.label }}">
+              {% if social.icon == "github" %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5A3.9 3.9 0 0 1 6.7 7.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0C16.7 4.7 17.5 5 17.5 5c.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+              {% elif social.icon == "linkedin" %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.3 3.8A2.3 2.3 0 1 1 5.3 8.4a2.3 2.3 0 0 1 0-4.6ZM3.4 9.7h3.8v10.9H3.4V9.7Zm6.1 0h3.7v1.5h.1a4 4 0 0 1 3.6-2c3.9 0 4.6 2.5 4.6 5.9v5.5h-3.8v-4.9c0-1.2 0-2.7-1.8-2.7s-2.5 1.3-2.5 2.6v5H9.5V9.7Z"/></svg>
+              {% else %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 3H22l-6.8 7.8L23.2 21H17l-4.8-6.3L6.7 21H3.5l7.2-8.3L3 3h6.3l4.4 5.8L18.9 3Zm-1.1 16h1.7L8.4 4.9H6.6L17.8 19Z"/></svg>
+              {% endif %}
+            </a>
           {% endfor %}
-        </div>
-        <div class="mt-4 flex justify-end">
-          <button class="rounded-xl bg-[#f0445b] px-4 py-2.5 text-xs font-bold text-white shadow-[0_10px_24px_rgba(240,68,91,0.2)]" type="button" disabled>
-            {{ locale.demo.deleteSelected }}
-          </button>
-        </div>
-      </div>
+        </nav>
+      {% endif %}
     </div>
   </div>
+</section>
+
+<section class="art-panel" aria-label="{{ locale.hero.artworkCaption }}">
+  <picture class="hero-art">
+    <source srcset="/assets/hero-art.webp" type="image/webp">
+    <img src="/assets/hero-art.webp" alt="" width="733" height="884">
+  </picture>
+  <p>{{ locale.hero.artworkCaption }}</p>
 </section>

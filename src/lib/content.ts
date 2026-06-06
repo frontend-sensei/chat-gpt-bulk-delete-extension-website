@@ -11,15 +11,19 @@ export const siteConfigSchema = z.object({
   storeUrl: z.url().refine((url) => url.startsWith("https://"), {
     message: "Store URL must use HTTPS"
   }),
-  localSiteUrl: z.url()
+  localSiteUrl: z.url(),
+  author: z.object({
+    name: nonEmptyString,
+    donateUrl: z.url().nullable(),
+    socialLinks: z.array(
+      z.object({
+        label: nonEmptyString,
+        url: z.url(),
+        icon: z.enum(["github", "linkedin", "x"])
+      })
+    )
+  })
 });
-
-const featureIconSchema = z.enum([
-  "checks",
-  "select-all",
-  "confirm",
-  "lightweight"
-]);
 
 export const localeContentSchema = z.object({
   locale: z.string().regex(/^[a-z]{2}(?:-[a-z]{2})?$/),
@@ -31,8 +35,6 @@ export const localeContentSchema = z.object({
     description: nonEmptyString
   }),
   nav: z.object({
-    features: nonEmptyString,
-    privacy: nonEmptyString,
     install: nonEmptyString,
     language: nonEmptyString
   }),
@@ -40,34 +42,12 @@ export const localeContentSchema = z.object({
     title: nonEmptyString,
     subtitle: nonEmptyString,
     cta: nonEmptyString,
-    note: nonEmptyString
+    donate: nonEmptyString,
+    note: nonEmptyString,
+    artworkCaption: nonEmptyString
   }),
-  demo: z.object({
-    title: nonEmptyString,
-    selected: nonEmptyString,
-    selectAll: nonEmptyString,
-    deleteSelected: nonEmptyString,
-    conversations: z.array(nonEmptyString).min(3)
-  }),
-  featuresHeading: nonEmptyString,
-  features: z
-    .array(
-      z.object({
-        title: nonEmptyString,
-        text: nonEmptyString,
-        icon: featureIconSchema
-      })
-    )
-    .min(1),
-  privacy: z.object({
-    title: nonEmptyString,
-    text: nonEmptyString,
-    linkLabel: nonEmptyString
-  }),
-  footer: z.object({
-    tagline: nonEmptyString,
-    disclaimer: nonEmptyString
-  })
+  highlights: z.array(nonEmptyString).length(3),
+  authorPrefix: nonEmptyString
 });
 
 export type SiteConfig = z.infer<typeof siteConfigSchema>;

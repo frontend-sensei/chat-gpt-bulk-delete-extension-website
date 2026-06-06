@@ -3,5 +3,16 @@
   "defaultLocale": "en",
   "extensionId": "gibkdljbjknbolnjmhnahcpjecgjifde",
   "storeUrl": "https://chromewebstore.google.com/detail/chatgpt-bulk-delete/gibkdljbjknbolnjmhnahcpjecgjifde",
-  "localSiteUrl": "http://localhost:8080"
+  "localSiteUrl": "http://localhost:8080",
+  "author": {
+    "name": "Yaroslav Hiulnazarian",
+    "donateUrl": null,
+    "socialLinks": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/frontend-sensei",
+        "icon": "github"
+      }
+    ]
+  }
 }
