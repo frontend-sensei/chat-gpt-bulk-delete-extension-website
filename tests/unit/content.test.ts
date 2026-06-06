@@ -23,7 +23,7 @@ const validLocale = {
     note: "Free forever.",
     artworkCaption: "Selected. Confirmed. Gone.",
   },
-  highlights: ["Bulk select", "Review first", "Privacy first"],
+  highlights: ["Free forever", "Delete in seconds", "Privacy first"],
   authorPrefix: "Built by",
 };
 
