@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ locale.locale }}" dir="{{ locale.dir }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ locale.seo.title }}</title>
+    <meta name="description" content="{{ locale.seo.description }}">
+    <meta name="theme-color" content="#fbfaff">
+    <link rel="canonical" href="{{ siteUrl | absoluteUrl(locale.path) }}">
+    {% for alternate in alternateLinks %}
+      <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url }}">
+    {% endfor %}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{{ locale.seo.title }}">
+    <meta property="og:description" content="{{ locale.seo.description }}">
+    <meta property="og:url" content="{{ siteUrl | absoluteUrl(locale.path) }}">
+    <meta property="og:image" content="{{ siteUrl | absoluteUrl('/assets/og-image.png') }}">
+    <meta property="og:locale" content="{{ locale.locale }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ locale.seo.title }}">
+    <meta name="twitter:description" content="{{ locale.seo.description }}">
+    <meta name="twitter:image" content="{{ siteUrl | absoluteUrl('/assets/og-image.png') }}">
+    <link rel="icon" href="/assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script type="application/ld+json">{{ locale | structuredData | json | safe }}</script>
+  </head>
+  <body>
+    <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-xl focus:bg-white focus:px-4 focus:py-3 focus:shadow-xl" href="#main">
+      {{ locale.nav.features }}
+    </a>
+    {% include "partials/header.njk" %}
+    <main id="main">
+      {% include "partials/hero.njk" %}
+      {% include "partials/features.njk" %}
+      {% include "partials/privacy.njk" %}
+    </main>
+    {% include "partials/footer.njk" %}
+  </body>
+</html>

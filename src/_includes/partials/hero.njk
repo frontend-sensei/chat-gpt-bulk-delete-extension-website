@@ -1,0 +1,57 @@
+<section class="page-shell grid items-center gap-14 pt-14 pb-24 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:pt-20 lg:pb-32">
+  <div class="max-w-2xl">
+    <h1 class="text-5xl leading-[0.98] font-bold tracking-[-0.055em] text-balance sm:text-6xl lg:text-7xl">
+      {{ locale.hero.title }}
+    </h1>
+    <p class="mt-7 max-w-xl text-lg leading-8 text-muted sm:text-xl">
+      {{ locale.hero.subtitle }}
+    </p>
+    <div class="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+      <a class="primary-button min-w-44" href="{{ site.storeUrl }}" target="_blank" rel="noopener noreferrer">
+        <svg class="size-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        {{ locale.hero.cta }}
+      </a>
+      <p class="text-sm font-medium text-muted">{{ locale.hero.note }}</p>
+    </div>
+  </div>
+
+  <div class="relative mx-auto w-full max-w-2xl">
+    <div class="absolute -top-8 -right-6 h-36 w-36 rounded-full bg-mint/30 blur-3xl" aria-hidden="true"></div>
+    <div class="absolute -bottom-8 -left-8 h-44 w-44 rounded-full bg-violet/25 blur-3xl" aria-hidden="true"></div>
+    <div class="glass-panel relative overflow-hidden rounded-[2rem] p-3 sm:p-5">
+      <div class="rounded-[1.4rem] border border-slate-200/80 bg-[#f8f9fb] p-4 sm:p-6">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
+          <div>
+            <p class="text-sm font-bold text-ink">{{ locale.demo.title }}</p>
+            <p class="mt-1 text-xs font-semibold text-violet">{{ locale.demo.selected }}</p>
+          </div>
+          <button class="rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-bold text-muted shadow-sm" type="button" disabled>
+            {{ locale.demo.selectAll }}
+          </button>
+        </div>
+        <div class="divide-y divide-slate-200/80">
+          {% for conversation in locale.demo.conversations %}
+            <div class="flex items-center gap-3 py-3.5{% if loop.last %} opacity-60{% endif %}">
+              <span class="flex size-5 shrink-0 items-center justify-center rounded-md border-2{% if not loop.last %} border-violet bg-violet text-white{% else %} border-slate-300 bg-white{% endif %}">
+                {% if not loop.last %}
+                  <svg class="size-3" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path d="m2.5 6 2.1 2.1L9.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                {% endif %}
+              </span>
+              <span class="min-w-0 flex-1 truncate text-sm font-semibold text-slate-700">{{ conversation }}</span>
+              <span class="size-2 shrink-0 rounded-full bg-slate-300" aria-hidden="true"></span>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="mt-4 flex justify-end">
+          <button class="rounded-xl bg-[#f0445b] px-4 py-2.5 text-xs font-bold text-white shadow-[0_10px_24px_rgba(240,68,91,0.2)]" type="button" disabled>
+            {{ locale.demo.deleteSelected }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
