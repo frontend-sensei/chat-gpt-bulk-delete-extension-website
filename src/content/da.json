@@ -1,0 +1,27 @@
+{
+  "locale": "da",
+  "languageName": "Dansk",
+  "path": "/da/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Ryd op i rodet",
+    "description": "Vælg flere ChatGPT-samtaler, og slet dem på én gang. Gratis, med bekræftelse først og helt uden sporing."
+  },
+  "nav": {
+    "install": "Føj til Chrome",
+    "language": "Sprog"
+  },
+  "hero": {
+    "title": "Slet ChatGPT-samtaler samlet.",
+    "subtitle": "Vælg, gennemgå og slet flere ChatGPT-samtaler på én gang.",
+    "cta": "Føj til Chrome",
+    "donate": "Donér via PayPal",
+    "artworkCaption": "Valgt. Bekræftet. Slettet."
+  },
+  "highlights": [
+    "Gratis for altid",
+    "Slet på få sekunder",
+    "Privatliv først"
+  ],
+  "authorPrefix": "Udviklet af"
+}

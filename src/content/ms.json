@@ -1,0 +1,27 @@
+{
+  "locale": "ms",
+  "languageName": "Bahasa Melayu",
+  "path": "/ms/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Kemas perbualan anda",
+    "description": "Pilih beberapa perbualan ChatGPT dan padam semuanya serentak. Percuma, dengan pengesahan dahulu dan tanpa penjejakan."
+  },
+  "nav": {
+    "install": "Tambahkan pada Chrome",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "title": "Padam perbualan ChatGPT secara pukal.",
+    "subtitle": "Pilih, semak dan padam beberapa perbualan dalam satu langkah.",
+    "cta": "Tambahkan pada Chrome",
+    "donate": "Derma melalui PayPal",
+    "artworkCaption": "Dipilih. Disahkan. Dipadam."
+  },
+  "highlights": [
+    "Percuma selamanya",
+    "Padam dalam beberapa saat",
+    "Privasi diutamakan"
+  ],
+  "authorPrefix": "Dibina oleh"
+}

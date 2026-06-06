@@ -1,0 +1,27 @@
+{
+  "locale": "ro",
+  "languageName": "Română",
+  "path": "/ro/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Fă ordine în conversații",
+    "description": "Selectează mai multe conversații ChatGPT și șterge-le dintr-o dată. Gratuit, cu confirmare înainte de ștergere și fără urmărire."
+  },
+  "nav": {
+    "install": "Adaugă în Chrome",
+    "language": "Limbă"
+  },
+  "hero": {
+    "title": "Șterge în masă conversațiile ChatGPT.",
+    "subtitle": "Selectează, verifică și șterge mai multe conversații dintr-o singură mișcare.",
+    "cta": "Adaugă în Chrome",
+    "donate": "Donează prin PayPal",
+    "artworkCaption": "Selectate. Confirmate. Șterse."
+  },
+  "highlights": [
+    "Gratuit pentru totdeauna",
+    "Ștergere în câteva secunde",
+    "Confidențialitatea pe primul loc"
+  ],
+  "authorPrefix": "Creat de"
+}

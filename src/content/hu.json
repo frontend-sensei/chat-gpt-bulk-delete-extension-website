@@ -1,0 +1,27 @@
+{
+  "locale": "hu",
+  "languageName": "Magyar",
+  "path": "/hu/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Tegyél rendet",
+    "description": "Jelölj ki több ChatGPT-beszélgetést, és töröld őket egyszerre. Ingyenes, törlés előtt megerősítést kér, és nem követ."
+  },
+  "nav": {
+    "install": "Hozzáadás a Chrome-hoz",
+    "language": "Nyelv"
+  },
+  "hero": {
+    "title": "Törölj több ChatGPT-beszélgetést egyszerre.",
+    "subtitle": "Jelöld ki, ellenőrizd, majd töröld a beszélgetéseket egyetlen lépésben.",
+    "cta": "Hozzáadás a Chrome-hoz",
+    "donate": "Támogatás PayPalon",
+    "artworkCaption": "Kijelölve. Megerősítve. Törölve."
+  },
+  "highlights": [
+    "Örökre ingyenes",
+    "Törlés másodpercek alatt",
+    "Első a magánszféra"
+  ],
+  "authorPrefix": "Készítette"
+}

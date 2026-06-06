@@ -1,0 +1,27 @@
+{
+  "locale": "nl",
+  "languageName": "Nederlands",
+  "path": "/nl/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Ruim je gesprekken op",
+    "description": "Selecteer meerdere ChatGPT-gesprekken en verwijder ze in één keer. Gratis, altijd met bevestiging en zonder tracking."
+  },
+  "nav": {
+    "install": "Toevoegen aan Chrome",
+    "language": "Taal"
+  },
+  "hero": {
+    "title": "Verwijder ChatGPT-gesprekken in bulk.",
+    "subtitle": "Selecteer, controleer en verwijder meerdere gesprekken in één keer.",
+    "cta": "Toevoegen aan Chrome",
+    "donate": "Doneren via PayPal",
+    "artworkCaption": "Geselecteerd. Bevestigd. Verwijderd."
+  },
+  "highlights": [
+    "Voor altijd gratis",
+    "Verwijder in enkele seconden",
+    "Privacy voorop"
+  ],
+  "authorPrefix": "Gemaakt door"
+}

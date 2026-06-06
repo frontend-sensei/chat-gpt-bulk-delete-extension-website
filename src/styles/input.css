@@ -185,9 +185,12 @@ summary {
 .language-switcher nav {
   position: absolute;
   top: calc(100% + 0.5rem);
-  right: 0;
+  inset-inline-end: 0;
   display: grid;
   min-width: 9rem;
+  max-height: min(30rem, calc(100dvh - 7rem));
+  overflow-y: auto;
+  overscroll-behavior: contain;
   gap: 0.25rem;
   border: 1px solid var(--control-border);
   border-radius: 0.85rem;
@@ -425,7 +428,7 @@ a.donate-button:hover {
   }
 
   .art-panel {
-    min-height: min(110vw, 48rem);
+    display: none;
   }
 }
 
@@ -474,9 +477,6 @@ a.donate-button:hover {
     flex-direction: column;
   }
 
-  .art-panel {
-    min-height: 125vw;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

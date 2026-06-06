@@ -1,0 +1,27 @@
+{
+  "locale": "tr",
+  "languageName": "Türkçe",
+  "path": "/tr/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Sohbetlerini düzenle",
+    "description": "Birden fazla ChatGPT sohbetini seçip tek seferde sil. Ücretsiz, silmeden önce onay ister ve takip yapmaz."
+  },
+  "nav": {
+    "install": "Chrome'a ekle",
+    "language": "Dil"
+  },
+  "hero": {
+    "title": "ChatGPT sohbetlerini topluca sil.",
+    "subtitle": "Birden fazla sohbeti seç, kontrol et ve tek seferde sil.",
+    "cta": "Chrome'a ekle",
+    "donate": "PayPal ile bağış yap",
+    "artworkCaption": "Seçildi. Onaylandı. Silindi."
+  },
+  "highlights": [
+    "Sonsuza kadar ücretsiz",
+    "Saniyeler içinde sil",
+    "Önce gizlilik"
+  ],
+  "authorPrefix": "Geliştiren"
+}

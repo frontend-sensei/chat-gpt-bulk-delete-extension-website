@@ -1,0 +1,27 @@
+{
+  "locale": "ar",
+  "languageName": "العربية",
+  "path": "/ar/",
+  "dir": "rtl",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — تخلّص من الفوضى",
+    "description": "حدّد عدة محادثات في ChatGPT واحذفها دفعة واحدة. مجاني، يطلب التأكيد أولًا، ومن دون أي تتبّع."
+  },
+  "nav": {
+    "install": "إضافة إلى Chrome",
+    "language": "اللغة"
+  },
+  "hero": {
+    "title": "احذف محادثات ChatGPT دفعة واحدة.",
+    "subtitle": "حدّد عدة محادثات وراجعها ثم احذفها بخطوة واحدة.",
+    "cta": "إضافة إلى Chrome",
+    "donate": "تبرّع عبر PayPal",
+    "artworkCaption": "تم التحديد. تم التأكيد. تم الحذف."
+  },
+  "highlights": [
+    "مجاني دائمًا",
+    "حذف خلال ثوانٍ",
+    "الخصوصية أولًا"
+  ],
+  "authorPrefix": "من تطوير"
+}

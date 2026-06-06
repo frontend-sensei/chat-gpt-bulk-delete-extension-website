@@ -1,0 +1,27 @@
+{
+  "locale": "cs",
+  "languageName": "Čeština",
+  "path": "/cs/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Ukliďte si v konverzacích",
+    "description": "Vyberte více konverzací v ChatGPT a odstraňte je najednou. Zdarma, vždy s potvrzením a bez sledování."
+  },
+  "nav": {
+    "install": "Přidat do Chromu",
+    "language": "Jazyk"
+  },
+  "hero": {
+    "title": "Mažte konverzace v ChatGPT hromadně.",
+    "subtitle": "Vyberte, zkontrolujte a odstraňte více konverzací najednou.",
+    "cta": "Přidat do Chromu",
+    "donate": "Přispět přes PayPal",
+    "artworkCaption": "Vybráno. Potvrzeno. Smazáno."
+  },
+  "highlights": [
+    "Navždy zdarma",
+    "Smazáno za pár sekund",
+    "Soukromí na prvním místě"
+  ],
+  "authorPrefix": "Vytvořil"
+}

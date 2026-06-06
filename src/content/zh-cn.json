@@ -1,0 +1,27 @@
+{
+  "locale": "zh-cn",
+  "languageName": "简体中文",
+  "path": "/zh-cn/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — 轻松整理对话",
+    "description": "选择多个 ChatGPT 对话并一次性删除。完全免费，删除前确认，不进行任何追踪。"
+  },
+  "nav": {
+    "install": "添加至 Chrome",
+    "language": "语言"
+  },
+  "hero": {
+    "title": "批量删除 ChatGPT 对话。",
+    "subtitle": "选择并检查多个对话，然后一次性删除。",
+    "cta": "添加至 Chrome",
+    "donate": "通过 PayPal 捐赠",
+    "artworkCaption": "已选择。已确认。已删除。"
+  },
+  "highlights": [
+    "永久免费",
+    "几秒完成删除",
+    "隐私优先"
+  ],
+  "authorPrefix": "开发者"
+}

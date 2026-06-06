@@ -1,0 +1,27 @@
+{
+  "locale": "fr",
+  "languageName": "Français",
+  "path": "/fr/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Faites place nette",
+    "description": "Sélectionnez plusieurs conversations ChatGPT et supprimez-les en une seule fois. Gratuit, avec confirmation et sans aucun suivi."
+  },
+  "nav": {
+    "install": "Ajouter à Chrome",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Supprimez vos conversations ChatGPT en masse.",
+    "subtitle": "Sélectionnez, vérifiez et supprimez plusieurs conversations en une seule fois.",
+    "cta": "Ajouter à Chrome",
+    "donate": "Faire un don via PayPal",
+    "artworkCaption": "Sélectionnées. Confirmées. Supprimées."
+  },
+  "highlights": [
+    "Gratuit pour toujours",
+    "Suppression en quelques secondes",
+    "Confidentialité avant tout"
+  ],
+  "authorPrefix": "Créé par"
+}

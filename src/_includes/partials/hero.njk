@@ -18,7 +18,7 @@
       </summary>
       <nav aria-label="{{ locale.nav.language }}">
         {% for language in locales %}
-          <a href="{{ language.path }}" lang="{{ language.locale }}" hreflang="{{ language.locale }}"{% if language.locale == locale.locale %} aria-current="page"{% endif %}>
+          <a href="{{ language.path }}" lang="{{ language.locale }}" dir="{{ language.dir }}" hreflang="{{ language.locale }}"{% if language.locale == locale.locale %} aria-current="page"{% endif %}>
             {{ language.languageName }}
           </a>
         {% endfor %}

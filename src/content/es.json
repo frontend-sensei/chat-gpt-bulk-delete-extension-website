@@ -1,0 +1,27 @@
+{
+  "locale": "es",
+  "languageName": "Español",
+  "path": "/es/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Despídete del desorden",
+    "description": "Selecciona varias conversaciones de ChatGPT y elimínalas de una sola vez. Gratis, con confirmación previa y sin seguimiento."
+  },
+  "nav": {
+    "install": "Añadir a Chrome",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Elimina conversaciones de ChatGPT en bloque.",
+    "subtitle": "Selecciona, revisa y elimina varias conversaciones de una sola vez.",
+    "cta": "Añadir a Chrome",
+    "donate": "Donar con PayPal",
+    "artworkCaption": "Seleccionadas. Confirmadas. Eliminadas."
+  },
+  "highlights": [
+    "Gratis para siempre",
+    "Elimina en segundos",
+    "Privacidad ante todo"
+  ],
+  "authorPrefix": "Creado por"
+}

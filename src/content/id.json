@@ -1,0 +1,27 @@
+{
+  "locale": "id",
+  "languageName": "Bahasa Indonesia",
+  "path": "/id/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Rapikan percakapan",
+    "description": "Pilih beberapa percakapan ChatGPT dan hapus sekaligus. Gratis, selalu meminta konfirmasi, dan tanpa pelacakan."
+  },
+  "nav": {
+    "install": "Tambahkan ke Chrome",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "title": "Hapus percakapan ChatGPT sekaligus.",
+    "subtitle": "Pilih, periksa, lalu hapus beberapa percakapan dalam satu langkah.",
+    "cta": "Tambahkan ke Chrome",
+    "donate": "Donasi melalui PayPal",
+    "artworkCaption": "Dipilih. Dikonfirmasi. Dihapus."
+  },
+  "highlights": [
+    "Gratis selamanya",
+    "Hapus dalam hitungan detik",
+    "Privasi nomor satu"
+  ],
+  "authorPrefix": "Dibuat oleh"
+}

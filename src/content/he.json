@@ -1,0 +1,27 @@
+{
+  "locale": "he",
+  "languageName": "עברית",
+  "path": "/he/",
+  "dir": "rtl",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — עושים סדר בשיחות",
+    "description": "בחרו כמה שיחות ChatGPT ומחקו את כולן בבת אחת. חינם, עם אישור לפני המחיקה וללא מעקב."
+  },
+  "nav": {
+    "install": "הוספה ל-Chrome",
+    "language": "שפה"
+  },
+  "hero": {
+    "title": "מוחקים שיחות ChatGPT בכמות גדולה.",
+    "subtitle": "בחרו, בדקו ומחקו כמה שיחות ChatGPT בפעולה אחת.",
+    "cta": "הוספה ל-Chrome",
+    "donate": "תרומה דרך PayPal",
+    "artworkCaption": "נבחרו. אושרו. נמחקו."
+  },
+  "highlights": [
+    "חינם לתמיד",
+    "מחיקה בתוך שניות",
+    "הפרטיות במקום הראשון"
+  ],
+  "authorPrefix": "פותח על ידי"
+}

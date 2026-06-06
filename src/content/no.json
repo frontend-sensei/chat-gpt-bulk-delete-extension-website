@@ -1,0 +1,27 @@
+{
+  "locale": "no",
+  "languageName": "Norsk",
+  "path": "/no/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Rydd opp i samtalene",
+    "description": "Velg flere ChatGPT-samtaler og slett dem samtidig. Gratis, med bekreftelse først og helt uten sporing."
+  },
+  "nav": {
+    "install": "Legg til i Chrome",
+    "language": "Språk"
+  },
+  "hero": {
+    "title": "Slett flere ChatGPT-samtaler samtidig.",
+    "subtitle": "Velg, se over og slett flere samtaler i én operasjon.",
+    "cta": "Legg til i Chrome",
+    "donate": "Doner via PayPal",
+    "artworkCaption": "Valgt. Bekreftet. Slettet."
+  },
+  "highlights": [
+    "Gratis for alltid",
+    "Slett på sekunder",
+    "Personvern først"
+  ],
+  "authorPrefix": "Utviklet av"
+}

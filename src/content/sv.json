@@ -1,0 +1,27 @@
+{
+  "locale": "sv",
+  "languageName": "Svenska",
+  "path": "/sv/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Rensa bland samtalen",
+    "description": "Välj flera ChatGPT-samtal och ta bort dem på en gång. Gratis, alltid med bekräftelse och helt utan spårning."
+  },
+  "nav": {
+    "install": "Lägg till i Chrome",
+    "language": "Språk"
+  },
+  "hero": {
+    "title": "Ta bort flera ChatGPT-samtal samtidigt.",
+    "subtitle": "Välj, granska och ta bort flera samtal i ett enda steg.",
+    "cta": "Lägg till i Chrome",
+    "donate": "Donera via PayPal",
+    "artworkCaption": "Valda. Bekräftade. Borttagna."
+  },
+  "highlights": [
+    "Gratis för alltid",
+    "Ta bort på några sekunder",
+    "Integritet först"
+  ],
+  "authorPrefix": "Utvecklad av"
+}

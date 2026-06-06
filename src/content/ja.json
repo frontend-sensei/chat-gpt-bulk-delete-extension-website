@@ -1,0 +1,27 @@
+{
+  "locale": "ja",
+  "languageName": "日本語",
+  "path": "/ja/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — 会話をすっきり整理",
+    "description": "複数のChatGPT会話を選び、まとめて削除できます。完全無料、削除前に確認、トラッキングなし。"
+  },
+  "nav": {
+    "install": "Chromeに追加",
+    "language": "言語"
+  },
+  "hero": {
+    "title": "ChatGPTの会話をまとめて削除。",
+    "subtitle": "複数の会話を選択して確認し、一度に削除できます。",
+    "cta": "Chromeに追加",
+    "donate": "PayPalで寄付",
+    "artworkCaption": "選択。確認。削除完了。"
+  },
+  "highlights": [
+    "ずっと無料",
+    "数秒で削除",
+    "プライバシー優先"
+  ],
+  "authorPrefix": "開発者"
+}

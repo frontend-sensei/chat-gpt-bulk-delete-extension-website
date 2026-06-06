@@ -1,0 +1,27 @@
+{
+  "locale": "hi",
+  "languageName": "हिन्दी",
+  "path": "/hi/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — बातचीत का ढेर साफ़ करें",
+    "description": "कई ChatGPT बातचीत चुनें और उन्हें एक साथ हटाएँ। मुफ़्त, पहले पुष्टि के साथ और बिना किसी ट्रैकिंग के।"
+  },
+  "nav": {
+    "install": "Chrome में जोड़ें",
+    "language": "भाषा"
+  },
+  "hero": {
+    "title": "ChatGPT बातचीत एक साथ हटाएँ।",
+    "subtitle": "कई बातचीत चुनें, जाँचें और एक ही बार में हटा दें।",
+    "cta": "Chrome में जोड़ें",
+    "donate": "PayPal से सहयोग करें",
+    "artworkCaption": "चुना। पुष्टि की। हटा दिया।"
+  },
+  "highlights": [
+    "हमेशा मुफ़्त",
+    "सेकंडों में हटाएँ",
+    "गोपनीयता पहले"
+  ],
+  "authorPrefix": "निर्माता"
+}

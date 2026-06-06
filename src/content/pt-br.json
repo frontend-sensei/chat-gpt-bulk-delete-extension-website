@@ -1,0 +1,27 @@
+{
+  "locale": "pt-br",
+  "languageName": "Português (Brasil)",
+  "path": "/pt-br/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Dê fim à bagunça",
+    "description": "Selecione várias conversas do ChatGPT e exclua tudo de uma vez. Grátis, com confirmação antes de excluir e sem rastreamento."
+  },
+  "nav": {
+    "install": "Adicionar ao Chrome",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Exclua conversas do ChatGPT em massa.",
+    "subtitle": "Selecione, revise e exclua várias conversas de uma só vez.",
+    "cta": "Adicionar ao Chrome",
+    "donate": "Doar pelo PayPal",
+    "artworkCaption": "Selecionadas. Confirmadas. Excluídas."
+  },
+  "highlights": [
+    "Grátis para sempre",
+    "Exclua em segundos",
+    "Privacidade em primeiro lugar"
+  ],
+  "authorPrefix": "Criado por"
+}

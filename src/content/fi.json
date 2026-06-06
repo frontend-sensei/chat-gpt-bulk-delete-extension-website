@@ -1,0 +1,27 @@
+{
+  "locale": "fi",
+  "languageName": "Suomi",
+  "path": "/fi/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Siivoa keskustelusi",
+    "description": "Valitse useita ChatGPT-keskusteluja ja poista ne kerralla. Ilmainen, varmistaa ennen poistoa eikä seuraa käyttäjää."
+  },
+  "nav": {
+    "install": "Lisää Chromeen",
+    "language": "Kieli"
+  },
+  "hero": {
+    "title": "Poista ChatGPT-keskusteluja kerralla.",
+    "subtitle": "Valitse, tarkista ja poista useita ChatGPT-keskusteluja yhdellä kertaa.",
+    "cta": "Lisää Chromeen",
+    "donate": "Lahjoita PayPalilla",
+    "artworkCaption": "Valittu. Vahvistettu. Poistettu."
+  },
+  "highlights": [
+    "Aina ilmainen",
+    "Poista sekunneissa",
+    "Yksityisyys ensin"
+  ],
+  "authorPrefix": "Tekijä"
+}

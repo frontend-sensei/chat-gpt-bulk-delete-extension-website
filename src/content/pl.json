@@ -1,0 +1,27 @@
+{
+  "locale": "pl",
+  "languageName": "Polski",
+  "path": "/pl/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Posprzątaj rozmowy",
+    "description": "Wybierz wiele rozmów ChatGPT i usuń je jednocześnie. Bezpłatnie, zawsze z potwierdzeniem i bez śledzenia."
+  },
+  "nav": {
+    "install": "Dodaj do Chrome",
+    "language": "Język"
+  },
+  "hero": {
+    "title": "Usuwaj rozmowy ChatGPT zbiorczo.",
+    "subtitle": "Wybierz, sprawdź i usuń wiele rozmów za jednym razem.",
+    "cta": "Dodaj do Chrome",
+    "donate": "Wesprzyj przez PayPal",
+    "artworkCaption": "Wybrane. Potwierdzone. Usunięte."
+  },
+  "highlights": [
+    "Bezpłatnie na zawsze",
+    "Usuwanie w kilka sekund",
+    "Prywatność przede wszystkim"
+  ],
+  "authorPrefix": "Autor"
+}

@@ -1,0 +1,27 @@
+{
+  "locale": "vi",
+  "languageName": "Tiếng Việt",
+  "path": "/vi/",
+  "dir": "ltr",
+  "seo": {
+    "title": "ChatGPT Bulk Delete — Dọn gọn cuộc trò chuyện",
+    "description": "Chọn nhiều cuộc trò chuyện ChatGPT và xóa cùng lúc. Miễn phí, luôn xác nhận trước khi xóa và không theo dõi."
+  },
+  "nav": {
+    "install": "Thêm vào Chrome",
+    "language": "Ngôn ngữ"
+  },
+  "hero": {
+    "title": "Xóa hàng loạt cuộc trò chuyện ChatGPT.",
+    "subtitle": "Chọn, xem lại và xóa nhiều cuộc trò chuyện chỉ trong một lần.",
+    "cta": "Thêm vào Chrome",
+    "donate": "Ủng hộ qua PayPal",
+    "artworkCaption": "Đã chọn. Đã xác nhận. Đã xóa."
+  },
+  "highlights": [
+    "Miễn phí mãi mãi",
+    "Xóa trong vài giây",
+    "Quyền riêng tư là ưu tiên"
+  ],
+  "authorPrefix": "Được phát triển bởi"
+}
