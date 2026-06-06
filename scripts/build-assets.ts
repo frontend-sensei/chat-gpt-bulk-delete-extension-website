@@ -22,27 +22,7 @@ const icon = await sharp(sourceIcon)
 await sharp(icon).toFile(iconOutput);
 await copyFile(sourceIcon, logoOutput);
 await sharp(sourceArtwork)
-  .composite([
-    {
-      input: Buffer.from(`
-        <svg width="1100" height="231" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="patch" x1="0" y1="0" x2="0" y2="231" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#071419" stop-opacity="0"/>
-              <stop offset="0.16" stop-color="#071419" stop-opacity="0.92"/>
-              <stop offset="0.24" stop-color="#071419"/>
-              <stop offset="1" stop-color="#061115"/>
-            </linearGradient>
-          </defs>
-          <rect width="1100" height="231" fill="url(#patch)"/>
-        </svg>
-      `),
-      left: 0,
-      top: 1095
-    }
-  ])
-  .resize(1100, 1326, { fit: "fill" })
-  .webp({ quality: 88, effort: 6 })
+  .webp({ quality: 94, effort: 6, smartSubsample: true })
   .toFile(artworkOutput);
 
 const iconData = (await readFile(sourceIcon)).toString("base64");
