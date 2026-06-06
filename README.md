@@ -87,18 +87,18 @@ illustration from the concept. `scripts/build-assets.ts` generates:
 - `dist/assets/hero-art.webp`
 - `dist/assets/og-image.png` (1200×630)
 
-Generated assets and build output are not committed.
+Generated assets and build output are not committed
 
 ## Cloudflare Pages
 
 Create a Pages project connected to this repository with:
 
-| Setting | Value |
-| --- | --- |
-| Production branch | `main` |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-| Node version | `24.14.1` |
+| Setting                | Value           |
+| ---------------------- | --------------- |
+| Production branch      | `main`          |
+| Build command          | `npm run build` |
+| Build output directory | `dist`          |
+| Node version           | `24.14.1`       |
 
 Add this production environment variable:
 
