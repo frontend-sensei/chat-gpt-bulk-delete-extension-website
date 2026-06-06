@@ -12,6 +12,31 @@
         "label": "GitHub",
         "url": "https://github.com/frontend-sensei",
         "icon": "github"
+      },
+      {
+        "label": "X",
+        "url": "https://x.com/zarian_y",
+        "icon": "x"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@YaroslavGulnazarian",
+        "icon": "youtube"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/frontend_sensei",
+        "icon": "instagram"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@zarian.dev",
+        "icon": "tiktok"
+      },
+      {
+        "label": "Website",
+        "url": "https://gulnazarian.dev/",
+        "icon": "globe"
       }
     ]
   }

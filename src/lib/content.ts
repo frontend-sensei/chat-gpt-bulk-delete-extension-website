@@ -19,7 +19,7 @@ export const siteConfigSchema = z.object({
       z.object({
         label: nonEmptyString,
         url: z.url(),
-        icon: z.enum(["github", "linkedin", "x"])
+        icon: z.enum(["github", "linkedin", "x", "youtube", "instagram", "tiktok", "globe"])
       })
     )
   })

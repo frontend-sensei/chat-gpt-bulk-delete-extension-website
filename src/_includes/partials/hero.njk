@@ -78,8 +78,16 @@
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5A3.9 3.9 0 0 1 6.7 7.7c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1.1a9.6 9.6 0 0 1 5.1 0C16.7 4.7 17.5 5 17.5 5c.6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 2V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
               {% elif social.icon == "linkedin" %}
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.3 3.8A2.3 2.3 0 1 1 5.3 8.4a2.3 2.3 0 0 1 0-4.6ZM3.4 9.7h3.8v10.9H3.4V9.7Zm6.1 0h3.7v1.5h.1a4 4 0 0 1 3.6-2c3.9 0 4.6 2.5 4.6 5.9v5.5h-3.8v-4.9c0-1.2 0-2.7-1.8-2.7s-2.5 1.3-2.5 2.6v5H9.5V9.7Z"/></svg>
-              {% else %}
+              {% elif social.icon == "x" %}
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 3H22l-6.8 7.8L23.2 21H17l-4.8-6.3L6.7 21H3.5l7.2-8.3L3 3h6.3l4.4 5.8L18.9 3Zm-1.1 16h1.7L8.4 4.9H6.6L17.8 19Z"/></svg>
+              {% elif social.icon == "youtube" %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
+              {% elif social.icon == "instagram" %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.1 1.5a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+              {% elif social.icon == "tiktok" %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.5 2h3.2a5.4 5.4 0 0 0 4.3 4.3v3.2a8.5 8.5 0 0 1-4.3-1.2v6.2a7 7 0 1 1-6-6.9v3.3a3.8 3.8 0 1 0 2.8 3.6V2Z"/></svg>
+              {% else %}
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm0 0c2.2-2.7 3.4-6.2 3.4-10S14.2 4.7 12 2c-2.2 2.7-3.4 6.2-3.4 10s1.2 7.3 3.4 10ZM2 12h20"/></svg>
               {% endif %}
             </a>
           {% endfor %}
