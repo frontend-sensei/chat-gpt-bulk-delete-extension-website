@@ -2,10 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { load } from "cheerio";
 import { describe, expect, it } from "vitest";
-import {
-  loadLocales,
-  type LocaleContent,
-} from "../../src/lib/content.ts";
+import { loadLocales, type LocaleContent } from "../../src/lib/content.ts";
 
 const dist = join(process.cwd(), "dist");
 const locales = loadLocales(join(process.cwd(), "src/content"));
@@ -45,9 +42,7 @@ const storeUrl =
   "https://chromewebstore.google.com/detail/chatgpt-bulk-delete/gibkdljbjknbolnjmhnahcpjecgjifde";
 const localePages: ReadonlyArray<readonly [string, LocaleContent]> = [
   ["index.html", locales.find(({ locale }) => locale === "en")!],
-  ...locales.map(
-    (locale) => [`${locale.locale}/index.html`, locale] as const,
-  ),
+  ...locales.map((locale) => [`${locale.locale}/index.html`, locale] as const),
 ];
 
 async function readOutput(path: string) {
@@ -77,9 +72,7 @@ describe("generated locale pages", () => {
       expect(alternates).toEqual([...expectedLocaleCodes, "x-default"]);
       expect(languageLinks).toHaveLength(expectedLocaleCodes.length);
       expect(
-        languageLinks
-          .map((_, element) => $(element).attr("hreflang"))
-          .get(),
+        languageLinks.map((_, element) => $(element).attr("hreflang")).get(),
       ).toEqual(expectedLocaleCodes);
       expect(
         languageLinks.map((_, element) => $(element).attr("dir")).get(),
@@ -92,6 +85,14 @@ describe("generated locale pages", () => {
         "/assets/styles.css",
       );
       expect($('script[type="application/ld+json"]')).toHaveLength(1);
+      expect($('script[src="https://cloud.umami.is/script.js"]')).toHaveLength(
+        1,
+      );
+      expect(
+        $('script[src="https://cloud.umami.is/script.js"]').attr(
+          "data-website-id",
+        ),
+      ).toBe("3b19e0ec-450a-4614-acbb-a1c0913341e0");
       expect($('meta[property="og:title"]')).toHaveLength(1);
       expect($('meta[name="twitter:card"]').attr("content")).toBe(
         "summary_large_image",
@@ -132,15 +133,11 @@ describe("generated locale pages", () => {
     expect(styles).toMatch(
       /@media\s*\(max-width:\s*980px\).*?\.art-panel\s*\{\s*display:\s*none/s,
     );
-    expect(styles).toMatch(
-      /\.language-switcher nav\{[^}]*inset-inline-end:0/,
-    );
+    expect(styles).toMatch(/\.language-switcher nav\{[^}]*inset-inline-end:0/);
     expect(styles).toMatch(
       /\.language-switcher nav\{[^}]*max-height:[^;}]*100dvh/,
     );
-    expect(styles).toMatch(
-      /\.language-switcher nav\{[^}]*overflow-y:auto/,
-    );
+    expect(styles).toMatch(/\.language-switcher nav\{[^}]*overflow-y:auto/);
     await expect(readFile(join(dist, "assets/icon.png"))).resolves.toBeTruthy();
     await expect(readFile(join(dist, "assets/logo.svg"))).resolves.toBeTruthy();
     await expect(
